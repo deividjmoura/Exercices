@@ -17,7 +17,7 @@ let valor = 100;
 http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write('<h1>Building a server with Node.js</h1>');
-
+    res.write('<meta http-equiv="refresh" content="1" >')
    // date and hour
     res.write('<h2>With some basic challenges </h2>');
     res.write('<h2>Date and Hour</h2>')
@@ -44,4 +44,4 @@ http.createServer(function(req, res) {
     res.write('<br>Custo: ' + travelCousts.coust(200, consumoGas, precoGas) + '<hr>');
 
     res.end()
-}).listen(8080); 
+}).listen(3000); 
