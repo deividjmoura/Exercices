@@ -29,3 +29,6 @@ exports.consumo = function(distancia, precoComb, abastecido) {
     let litros = abastecido / precoComb;
     return (distancia / litros).toFixed(0) + 'km/l'
 }
+exports.coust = function(distancia, consumo, precoComb) {
+    return 'R$' + (distancia / consumo * precoComb)
+}

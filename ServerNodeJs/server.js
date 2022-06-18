@@ -1,13 +1,13 @@
 
-let http = require('http');
+const http = require('http');
 // to date and hour
-let date = require('./modules');
+const date = require('./modules');
 // to calculator
-let calc = require('./modules');
+const calc = require('./modules');
 let x = 10;
 let y = 5;
 // to travelCousts
-let travelCousts = require('./modules')
+const travelCousts = require('./modules')
 let consumoGas = 10;
 let consumoAlc = 7;
 let precoGas = 5;
@@ -40,8 +40,8 @@ http.createServer(function(req, res) {
     '<br>Valor Abastecido = 100;' + '<br><br>');
     res.write('Autonomia com Gasolina: ' + travelCousts.autonomia(consumoGas, precoGas, valor));
     res.write('<br> Autonomia com Alcool: ' + travelCousts.autonomia(consumoAlc, precoAlc, valor));
-    res.write('<br>Consumo: ' + travelCousts.consumo(200, precoGas, valor)+ '<hr>');
-
+    res.write('<br>Consumo: ' + travelCousts.consumo(200, precoGas, valor));
+    res.write('<br>Custo: ' + travelCousts.coust(200, consumoGas, precoGas) + '<hr>');
 
     res.end()
 }).listen(8080); 
