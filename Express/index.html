@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espress</title>
+</head>
+<body>
+    <h1>Marcas de Carro</h1>
+
+    <ul class="lista"></ul>
+    <script>
+        let marcas = ['bmw', 'audi', 'jeep', 'ram'];
+        // ↓↓↓ buscado no documento o 1 [0] elemento da classe 'lista' 
+        let lista = document.getElementsByClassName('lista')[0]; 
+
+        // ↓↓↓ enquando o 'marcss' for < que 0 adciociona 1 item a lista
+        for (x = 0; x < marcas.length; x++) {
+        // criado elemento 'li' ↓↓↓ (posso criar qualquer elemento html)
+            let li = document.createElement('li')
+        // enviado ↓↓↓ ao html o valor para marcas
+            li.innerHTML = marcas[x];
+        // lista recebe ↓↓↓ o valor de x enqunto houver itens na lista
+            lista.appendChild(li);
+        }
+    </script>
+</body>
+</html>
