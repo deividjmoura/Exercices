@@ -29,7 +29,7 @@ app.post('/upload_file', function(req, res) {
             if (err) {
                 console.log('Erro: ' + err);
             } else {
-                response ={
+                response = {
                     mensagem: 'Upload efetuado com suceso!',
                     arquivo: req.file.originalname
                 }
