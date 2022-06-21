@@ -18,7 +18,7 @@ app.post("/logar", (req, res) => {
             if (usuarios[x][1] == senha) {
             res.end("Seja bem-vindo " + usuario);
             } else {
-            res.end("Senha incorreta!");
+            res.end("Senha incorreta! ");
             }
         } 
     }
