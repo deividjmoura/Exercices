@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Creating a new Server</title>
+</head>
+<body>
+    <button class="button" role="button" onclick="yes()">Enviar </button>
+    <script>
+        function yes(){
+            fetch('http://0.0.0.0:3000/')
+            .then(function(response) {
+                return response.text();
+                })
+            .then(function (response){
+                console.log (response)
+            }
+            )
+            .catch(function(error) {
+  console.log('There has been a problem with your fetch operation: ' + error.message);
+})}
+    </script>
+</body>
+</html>
+    </script>
+</body>
+</html>
