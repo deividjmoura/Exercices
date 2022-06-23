@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(57, 76, 189);
+}
+
+div#container {
+    margin: 3% 3%;
+    padding: 6px 6px 6px 6px;
+    height: 60vh;
+    width: 50vh;
+    border: 2px solid rgb(65, 92, 248);
+    border-radius: 3%;
+}
+
+label, input {
+    padding: 0;
+    border: 2px 2px 2px 2px solid rgb(7, 31, 241);
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#container:focus {
+    box-shadow: 15px aqua;
+}
