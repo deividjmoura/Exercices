@@ -6,3 +6,11 @@ body {
 h1 {
     color: rgb(220, 220, 82);
 }
+
+div#area {
+    background-color: rgb(41, 115, 180);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
