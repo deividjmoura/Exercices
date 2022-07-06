@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(15, 15, 132), rgb(71, 147, 209));;
+    background-repeat: no-repeat;
+    color: white;
+    font: normal 20pt Arial;
+}
+
+input {
+    font: normal 10pt Arial;
+}
+div#res {
+    margin-top: 20px;
+}
