@@ -1,0 +1,18 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input {
+    height: 35px;
+    max-width: 60vh;
+    width: 100%;
+    border-radius: 15px;
+    margin: 24px 0;
+    outline: none;
+    border: 2px solid rgb(192, 192, 211);
+    font-size: large;
+}
