@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha Vendas Online</title>
+</head>
+<body onload="nome(), codigo(), data(), pedido(), nota(), volumes(), hora(), itens(), trans()">
+    <header>
+        Nome: <span id="nome"></span> Código: <span id="codigo"></span> Data: <span id="data"></span>
+    </header>
+    <div>
+        <table border="1" id="tabela" style="width: auto;">
+            <tr>
+                <th class="table" id="pedido">Pedido</th> 
+                <th class="table" id="nota"> Nota Fiscal</th>
+                <th class="table" id="vol"> Volumes </th>
+                <th class="table" id="hora"> Hora </th>
+                <th class="table" id="itens"> Itens </th>
+                <th class="table" id="trans"> Trans</th>              
+            </tr>
+         
+        </table>
+       
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
