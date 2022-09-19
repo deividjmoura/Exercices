@@ -1,34 +1,7 @@
 const now = new Date
 const tabela = document.getElementById('tabela');
 let tr = document.createElement('tr');
-let tr1 = document.createElement('tr1');
 
-
-function nome()
-{
-let x;
-
-let nome=prompt("Digite seu nome:");
-
-if (nome!=null)
-  {
-  x=`${nome}`;
-  document.getElementById("nome").innerHTML=x;
-  }
-}
-
-function codigo()
-{
-let x;
-
-let codigo=prompt("Digite seu código:");
-
-if (nome!=null)
-  {
-  x=`${codigo}`;
-  document.getElementById("codigo").innerHTML=x;
-  }
-}
 
 function data()
 {
@@ -38,6 +11,48 @@ if (codigo!=null)
   {
   x=`${codigo}`;
   document.getElementById("data").innerHTML = (now.getDate() + " do " + now.getMonth() + " de " + now.getFullYear());
+  }
+}
+
+function codigo()
+{
+let x;
+
+let codigo=prompt("Digite seu código:");
+
+if (codigo!=null)
+  {
+  x=`${codigo}`;
+  document.getElementById("codigo").innerHTML=x;
+  } else {
+    window.alert("Digite seu codigo para continuar");
+    codigo=prompt("Digite seu codigo para prosseguir");
+    x=`${codigo}`
+    document.getElementById("codigo").innerHTML=x;
+  }  
+}
+
+function novaTabela()
+{
+let x;
+
+let nome=prompt("Digite seu nome:");
+
+if (nome!=null)
+  {    
+    x=`${nome}`;
+    document.getElementById("nome").innerHTML=x;
+  } else {   
+    window.alert("Digite seu nome para continuar");
+    nome=prompt("Digite seu nome:");
+    x=`${nome}`
+    document.getElementById("nome").innerHTML=x;
+  }
+  while(x != null){
+    return codigo(), data(); 
+}
+  while(data != null){
+    return pedido();
   }
 }
 
@@ -88,3 +103,5 @@ function trans() {
     td5.innerHTML = `${trans}`
     tr.appendChild(td5)
 }
+
+
