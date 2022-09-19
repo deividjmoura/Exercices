@@ -1,7 +1,8 @@
 const now = new Date
 const tabela = document.getElementById('tabela');
 let tr = document.createElement('tr');
-let td = document.createElement('td');
+let tr1 = document.createElement('tr1');
+
 
 function nome()
 {
