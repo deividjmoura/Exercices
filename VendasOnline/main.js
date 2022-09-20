@@ -14,8 +14,7 @@ if (codigo!=null)
   }
 }
 
-function codigo()
-{
+function codigo(){
 let x;
 
 let codigo=prompt("Digite seu código:");
@@ -32,29 +31,15 @@ if (codigo!=null)
   }  
 }
 
-function novaTabela()
-{
-let x;
-
-let nome=prompt("Digite seu nome:");
-
-if (nome!=null)
-  {    
-    x=`${nome}`;
+function novaTabela(){
+    let x;
+    let nome=prompt("Digite seu nome:");  
+    x =`${nome}`;
     document.getElementById("nome").innerHTML=x;
-  } else {   
-    window.alert("Digite seu nome para continuar");
-    nome=prompt("Digite seu nome:");
-    x=`${nome}`
-    document.getElementById("nome").innerHTML=x;
-  }
-  while(x != null){
-    return codigo(), data(); 
-}
-  while(data != null){
-    return pedido();
-  }
-}
+    if (nome===null)
+      window.alert =`${nome}`;
+    }
+
 
 function pedido() {
     tabela.appendChild(tr);
