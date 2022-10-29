@@ -1,0 +1,29 @@
+---BANCO DE DADOS---
+Arquivos guardam tabelas que por sua vez guardam registros, 
+em uma analogia simples o armário (arquivo) guarda as pastas
+(tabelas) que tem os folhas (registros).
+Inicialemente os dados eram guardados em arquivos sequenciais, o que 
+reduzia significativamente o tempo de pesquisa e tratamento dos dados.
+Supondo que fosse necessário os dados registrados na quinta posição 
+era preciso ler todos os anteriores até se chegar a este.
+Posteriormente surgiram os arquivos de acesso direto onde há a possibilidade de 
+guardar os registros "indexados" com uma "identificação" para encontrar
+de forma mais rápida o registro, já que o mesmo tem um "caminho" agora.
+Pela década de 60 foi criado o banco de dados, que até hoje é composto de 
+quatro partes: 1-base de dados, 2-sistema gerenciador de banco de dados (SGBD)
+em ingles DMS (dates manager system), 3-linguagem de exploração e 4-programas
+adicionais.
+A IBM propos a criação de dados hierárquicos, onde os dados seriam interligados.
+Este ficou conhecido com o modelo hierárquico, logo em seguida foi criado 
+outro modelo onde os dados não teriam distinções de superioaridade, chamado 
+modelo de rede. Ambos criado nos meados da década de 60.
+Em meados de 70, um dos fundadores da IBM Edgar F. Codd, criou o modelo 
+relacional, que é o mais simples de se entender inicialmente.
+Este permite, uma maior 'relação' com quem solicita os dados, podendo este
+então fornecer também informações ao banco, como dados de uso e ainda ter 
+acesso a mais como por exemplo conectar-se aos forncedores. Desde que estas
+permissões forem dadas pelo gerenciador/criador do banco de dados. Gerido
+pela linguagem de exploração.
+Esta já teve vários nomes como: Structured English Query Language, conhecida
+incialmente como SEQUEL, posteriormente sendo conhecido Structured Query Language
+ou SQL. QUERY é a resposta a solicitação.
