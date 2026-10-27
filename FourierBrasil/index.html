@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasil por Séries de Fourier — Círculos que Giramos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>O Brasil desenhado por círculos que giram</h1>
+      <p class="subtitle">Série de Fourier · Epicycles</p>
+    </header>
+
+    <div class="controls">
+      <label>
+        Círculos:
+        <input type="range" id="circles" min="1" max="200" value="80" />
+        <span id="circlesValue">80</span>
+      </label>
+      <label>
+        Velocidade:
+        <input type="range" id="speed" min="1" max="20" value="6" />
+        <span id="speedValue">6</span>
+      </label>
+      <button id="btnPlay">Pausar</button>
+      <button id="btnReset">Reiniciar</button>
+      <label class="checkbox">
+        <input type="checkbox" id="showCircles" checked />
+        Mostrar círculos
+      </label>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <footer>
+      <p>
+        Cada círculo gira com frequência constante. A ponta do último vetor
+        traça o contorno do Brasil. Quanto mais termos da série, mais preciso
+        fica o desenho.
+      </p>
+      <p class="credit">
+        Inspirado no short:
+        <a href="https://youtube.com/shorts/CPDtGtcx6PM" target="_blank" rel="noopener">
+          O Brasil desenhado por círculos que giram
+        </a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="fourier.js"></script>
+</body>
+</html>
